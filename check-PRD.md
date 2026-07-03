@@ -1,0 +1,4 @@
+- ¿Cada RF tiene un AC que lo verifique?
+- ¿Cada RNF tiene un número?
+- ¿Tus criterios son binarios (pasa/no pasa) o están llenos de - «correctamente» y «adecuado»?
+- ¿Tienen IDs identificatorios (RF-01, AC-01) para poder trazar?
