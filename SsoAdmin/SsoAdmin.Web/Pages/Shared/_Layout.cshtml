@@ -29,6 +29,19 @@
                             <a class="nav-link text-dark" asp-area="" asp-page="/Aplicaciones/Index">Aplicaciones</a>
                         </li>
                     </ul>
+                    <ul class="navbar-nav">
+                        @if (User.Identity?.IsAuthenticated == true)
+                        {
+                            <li class="nav-item d-flex align-items-center me-2">
+                                <span class="text-muted small">@User.Identity.Name</span>
+                            </li>
+                            <li class="nav-item">
+                                <form method="post" asp-page="/Account/Logout">
+                                    <button type="submit" class="btn btn-link nav-link text-dark">Salir</button>
+                                </form>
+                            </li>
+                        }
+                    </ul>
                 </div>
             </div>
         </nav>

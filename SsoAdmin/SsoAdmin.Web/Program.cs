@@ -1,4 +1,5 @@
 using Dapper;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using SsoAdmin.Application.Interfaces;
 using SsoAdmin.Application.Services;
 using SsoAdmin.Application.UseCases;
@@ -9,7 +10,20 @@ var builder = WebApplication.CreateBuilder(args);
 
 SqlMapper.AddTypeHandler(new DateOnlyTypeHandler());
 
-builder.Services.AddRazorPages();
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/Account/Login";
+        options.AccessDeniedPath = "/Account/Login";
+        options.ExpireTimeSpan = TimeSpan.FromHours(8);
+        options.SlidingExpiration = true;
+    });
+
+builder.Services.AddRazorPages(options =>
+{
+    options.Conventions.AuthorizeFolder("/");
+    options.Conventions.AllowAnonymousToPage("/Account/Login");
+});
 
 string connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
     ?? "Data Source=ssoadmin.db";
@@ -17,12 +31,14 @@ string connectionString = builder.Configuration.GetConnectionString("DefaultConn
 builder.Services.AddSingleton(new DbConnectionFactory(connectionString));
 builder.Services.AddSingleton<SchemaInitializer>();
 
+builder.Services.AddScoped<ILoginRepository, LoginRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<ICredentialRepository, CredentialRepository>();
 builder.Services.AddScoped<IApplicationRepository, ApplicationRepository>();
 builder.Services.AddScoped<IPermissionRepository, PermissionRepository>();
 
 builder.Services.AddScoped<IAdminQueryService, AdminQueryService>();
+builder.Services.AddScoped<ILoginUseCase, LoginUseCase>();
 builder.Services.AddScoped<ICreateUsuarioUseCase, CreateUsuarioUseCase>();
 builder.Services.AddScoped<IEditUsuarioUseCase, EditUsuarioUseCase>();
 builder.Services.AddScoped<IDeactivateUsuarioUseCase, DeactivateUsuarioUseCase>();
@@ -45,6 +61,7 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
+app.UseAuthentication();
 app.UseAuthorization();
 app.MapRazorPages();
 app.Run();

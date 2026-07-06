@@ -33,5 +33,14 @@ internal static class Schema
 
         CREATE INDEX IF NOT EXISTS IX_Permissions_UserId_ApplicationId
             ON Permissions(UserId, ApplicationId);
+
+        CREATE TABLE IF NOT EXISTS Login (
+            Id           INTEGER PRIMARY KEY AUTOINCREMENT,
+            Username     TEXT    NOT NULL UNIQUE,
+            PasswordHash TEXT    NOT NULL
+        );
+
+        INSERT OR IGNORE INTO Login (Username, PasswordHash)
+        VALUES ('admin', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918');
         """;
 }
