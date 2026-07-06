@@ -3,7 +3,8 @@ Este proyecto es una aplicación para administrar un Backend para un Single Sign
 
 ## 1. Contexto Tecnológico
 - **Lenguaje:** C# 12
-- **Frameworks:** .NET 8 (o tu versión correspondiente)
+- **Frameworks:** .NET 10 
+- **Frontend:** ASP.NET, Razor, Bootstrap, Javascript Vanilla.
 - **Patrones de Arquitectura:** Clean Architecture, Domain-Driven Design (DDD), Inyección de Dependencias.
 - **ORM:** Dapper
 
