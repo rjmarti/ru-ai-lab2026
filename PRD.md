@@ -26,7 +26,7 @@ Se implementará un backend que sirva como fuente de verdad para un SSO externo 
 - **RF-04:** El sistema debe permitir otorgar permisos de acceso a una aplicación para un usuario, indicando una `fecha_desde` obligatoria y una `fecha_hasta` opcional (si se omite, el permiso es indefinido). Los períodos de un mismo usuario para una misma aplicación no deben solaparse.
 - **RF-05:** El sistema debe permitir revocar el permiso de acceso de un usuario a una aplicación, estableciendo la `fecha_hasta` igual a la fecha actual.
 - **RF-06:** El sistema debe permitir dar de baja lógica a un usuario, lo que debe caducar automáticamente todos sus permisos activos en todas las aplicaciones.
-- **RF-07:** El sistema debe implementar un login básico para que los usuarios de SI puedan autenticarse en la aplicación. Para esta etapa se almacenara en una tabla de la base de datos con un hash no reversible.
+- **RF-07:** El sistema debe implementar un login básico para que los usuarios de SI puedan autenticarse en la aplicación. Para esta etapa se almacenara en una tabla `login` de la base de datos con un hash no reversible. Para el primer login precargar un usuario `admin` con password `admin`
 - **RF-08:** El sistema debe exponer un endpoint REST para que el SSO consulte si una credencial tiene acceso a una aplicación, con el siguiente contrato:
   - **Método:** `POST /api/sso/verificar`
   - **Request body:**
