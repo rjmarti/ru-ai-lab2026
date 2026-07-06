@@ -1,0 +1,35 @@
+@page
+@model SsoAdmin.Web.Pages.Credenciales.CreateModel
+@{ ViewData["Title"] = "Nueva credencial"; }
+
+<h2>Nueva credencial</h2>
+<hr />
+
+<div class="row">
+    <div class="col-md-5">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="mb-3">
+                <label asp-for="Input.UserId" class="form-label">Usuario</label>
+                <select asp-for="Input.UserId" asp-items="Model.UsuariosItems" class="form-select">
+                    <option value="">-- Seleccione --</option>
+                </select>
+                <span asp-validation-for="Input.UserId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Input.Username" class="form-label">Username</label>
+                <input asp-for="Input.Username" class="form-control" />
+                <span asp-validation-for="Input.Username" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Input.Emisor" class="form-label">Emisor</label>
+                <input asp-for="Input.Emisor" class="form-control" placeholder="ej. google, microsoft" />
+                <span asp-validation-for="Input.Emisor" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Crear</button>
+            <a asp-page="Index" class="btn btn-secondary">Cancelar</a>
+        </form>
+    </div>
+</div>
+
+@section Scripts { @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); } }

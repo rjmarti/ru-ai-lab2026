@@ -1,0 +1,24 @@
+@page "{id:int}"
+@model SsoAdmin.Web.Pages.Usuarios.EditModel
+@{ ViewData["Title"] = "Editar usuario"; }
+
+<h2>Editar usuario</h2>
+<hr />
+
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input asp-for="Input.Id" type="hidden" />
+            <div class="mb-3">
+                <label asp-for="Input.Name" class="form-label">Nombre</label>
+                <input asp-for="Input.Name" class="form-control" />
+                <span asp-validation-for="Input.Name" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+            <a asp-page="Index" class="btn btn-secondary">Cancelar</a>
+        </form>
+    </div>
+</div>
+
+@section Scripts { @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); } }

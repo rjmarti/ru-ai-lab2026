@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\MyDisk\\Git\\cursos\\ru-ai-lab2026\\SsoAdmin\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{05FF7CEF-EA19-6019-BA89-436F0A9A5ABF}|SsoAdmin.API\\SsoAdmin.API.csproj|c:\\mydisk\\git\\cursos\\ru-ai-lab2026\\ssoadmin\\ssoadmin.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05FF7CEF-EA19-6019-BA89-436F0A9A5ABF}|SsoAdmin.API\\SsoAdmin.API.csproj|solutionrelative:ssoadmin.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BBF6C49-0AFF-A818-6DF3-C6E96F41B6D4}|SsoAdmin.Infrastructure\\SsoAdmin.Infrastructure.csproj|c:\\mydisk\\git\\cursos\\ru-ai-lab2026\\ssoadmin\\ssoadmin.infrastructure\\data\\dbconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BBF6C49-0AFF-A818-6DF3-C6E96F41B6D4}|SsoAdmin.Infrastructure\\SsoAdmin.Infrastructure.csproj|solutionrelative:ssoadmin.infrastructure\\data\\dbconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05FF7CEF-EA19-6019-BA89-436F0A9A5ABF}|SsoAdmin.API\\SsoAdmin.API.csproj|c:\\mydisk\\git\\cursos\\ru-ai-lab2026\\ssoadmin\\ssoadmin.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{05FF7CEF-EA19-6019-BA89-436F0A9A5ABF}|SsoAdmin.API\\SsoAdmin.API.csproj|solutionrelative:ssoadmin.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\MyDisk\\Git\\cursos\\ru-ai-lab2026\\SsoAdmin\\SsoAdmin.Web\\bin\\Debug\\net8.0\\appsettings.Development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SsoAdmin.Web\\bin\\Debug\\net8.0\\appsettings.Development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\MyDisk\\Git\\cursos\\ru-ai-lab2026\\SsoAdmin\\SsoAdmin.API\\Program.cs",
+              "RelativeDocumentMoniker": "SsoAdmin.API\\Program.cs",
+              "ToolTip": "C:\\MyDisk\\Git\\cursos\\ru-ai-lab2026\\SsoAdmin\\SsoAdmin.API\\Program.cs",
+              "RelativeToolTip": "SsoAdmin.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-06T16:04:54.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DbConnectionFactory.cs",
+              "DocumentMoniker": "C:\\MyDisk\\Git\\cursos\\ru-ai-lab2026\\SsoAdmin\\SsoAdmin.Infrastructure\\Data\\DbConnectionFactory.cs",
+              "RelativeDocumentMoniker": "SsoAdmin.Infrastructure\\Data\\DbConnectionFactory.cs",
+              "ToolTip": "C:\\MyDisk\\Git\\cursos\\ru-ai-lab2026\\SsoAdmin\\SsoAdmin.Infrastructure\\Data\\DbConnectionFactory.cs",
+              "RelativeToolTip": "SsoAdmin.Infrastructure\\Data\\DbConnectionFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-06T16:04:26.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:13:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\MyDisk\\Git\\cursos\\ru-ai-lab2026\\SsoAdmin\\SsoAdmin.API\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "SsoAdmin.API\\appsettings.Development.json",
+              "ToolTip": "C:\\MyDisk\\Git\\cursos\\ru-ai-lab2026\\SsoAdmin\\SsoAdmin.API\\appsettings.Development.json",
+              "RelativeToolTip": "SsoAdmin.API\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-07-06T16:03:59.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\MyDisk\\Git\\cursos\\ru-ai-lab2026\\SsoAdmin\\SsoAdmin.Web\\bin\\Debug\\net8.0\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "SsoAdmin.Web\\bin\\Debug\\net8.0\\appsettings.Development.json",
+              "ToolTip": "C:\\MyDisk\\Git\\cursos\\ru-ai-lab2026\\SsoAdmin\\SsoAdmin.Web\\bin\\Debug\\net8.0\\appsettings.Development.json",
+              "RelativeToolTip": "SsoAdmin.Web\\bin\\Debug\\net8.0\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-07-06T16:03:34.995Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1352,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

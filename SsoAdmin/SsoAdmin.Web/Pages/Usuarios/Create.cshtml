@@ -1,0 +1,23 @@
+@page
+@model SsoAdmin.Web.Pages.Usuarios.CreateModel
+@{ ViewData["Title"] = "Nuevo usuario"; }
+
+<h2>Nuevo usuario</h2>
+<hr />
+
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="mb-3">
+                <label asp-for="Input.Name" class="form-label">Nombre</label>
+                <input asp-for="Input.Name" class="form-control" />
+                <span asp-validation-for="Input.Name" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Crear</button>
+            <a asp-page="Index" class="btn btn-secondary">Cancelar</a>
+        </form>
+    </div>
+</div>
+
+@section Scripts { @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); } }

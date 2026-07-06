@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="SsoAdmin.API/SsoAdmin.API.csproj" />
+  <Project Path="SsoAdmin.Application/SsoAdmin.Application.csproj" />
+  <Project Path="SsoAdmin.Domain/SsoAdmin.Domain.csproj" />
+  <Project Path="SsoAdmin.Infrastructure/SsoAdmin.Infrastructure.csproj" />
+  <Project Path="SsoAdmin.Web/SsoAdmin.Web.csproj" />
+</Solution>
