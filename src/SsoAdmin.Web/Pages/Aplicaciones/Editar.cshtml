@@ -1,0 +1,32 @@
+@page "{id:int}"
+@model SsoAdmin.Web.Pages.Aplicaciones.EditarModel
+@{
+    ViewData["Title"] = "Editar aplicación";
+}
+
+<h2>Editar aplicación</h2>
+
+<div class="row">
+    <div class="col-md-5">
+        <form method="post">
+            <div class="mb-3">
+                <label asp-for="Input.Nombre" class="form-label">Nombre</label>
+                <input asp-for="Input.Nombre" class="form-control" />
+                <span asp-validation-for="Input.Nombre" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Input.Url" class="form-label">URL</label>
+                <input asp-for="Input.Url" class="form-control" />
+                <span asp-validation-for="Input.Url" class="text-danger"></span>
+            </div>
+            <div class="d-flex gap-2">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+                <a asp-page="Index" class="btn btn-outline-secondary">Cancelar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

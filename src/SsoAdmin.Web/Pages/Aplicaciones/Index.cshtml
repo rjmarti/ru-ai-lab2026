@@ -1,0 +1,43 @@
+@page
+@model SsoAdmin.Web.Pages.Aplicaciones.IndexModel
+@{
+    ViewData["Title"] = "Aplicaciones";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2>Aplicaciones</h2>
+    <a asp-page="Crear" class="btn btn-primary">+ Nueva aplicación</a>
+</div>
+
+@if (TempData["Mensaje"] is string msg)
+{
+    <div class="alert alert-success">@msg</div>
+}
+
+<table class="table table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th>Nombre</th>
+            <th>URL</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var app in Model.Aplicaciones)
+        {
+            <tr>
+                <td>@app.Nombre</td>
+                <td><a href="@app.Url" target="_blank" rel="noopener">@app.Url</a></td>
+                <td class="text-end">
+                    <a asp-page="Editar" asp-route-id="@app.Id" class="btn btn-sm btn-outline-secondary">Editar</a>
+                    <form method="post" asp-page-handler="Eliminar" asp-route-id="@app.Id" class="d-inline">
+                        <button type="submit" class="btn btn-sm btn-outline-danger"
+                                onclick="return confirm('¿Eliminar esta aplicación?')">
+                            Eliminar
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

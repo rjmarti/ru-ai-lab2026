@@ -1,14 +1,12 @@
 # Contexto del Proyecto
 Este proyecto es una aplicación para administrar un Backend para un Single Sign On (SSO) 
 
-**NombreProyecto** SsoAdmin
-
 ## 1. Contexto Tecnológico
 - **Lenguaje:** C# 12
 - **Frameworks:** .NET 10 
 - **Frontend:** ASP.NET, Razor, Bootstrap, Javascript Vanilla.
 - **Patrones de Arquitectura:** Clean Architecture, Domain-Driven Design (DDD), Inyección de Dependencias.
-- **ORM:** Entity Framework Core
+- **ORM:** Dapper
 
 ## 2. Convenciones de Código y Estilo
 - Sigue siempre las convenciones oficiales de Microsoft para C#.
@@ -21,9 +19,9 @@ Este proyecto es una aplicación para administrar un Backend para un Single Sign
 
 ## 3. Estructura de Proyectos
 Asume la siguiente estructura de solución:
-- `[NombreProyecto].Data`: Acceso y Mapeo a la base de Datos.Implementación de EF Core.
-- `[NombreProyecto].Models`: Entidades base.
-- `[NombreProyecto].Application`: Casos de uso y lógica de negocios.
+- `[NombreProyecto].Domain`: Entidades base y reglas de negocio.
+- `[NombreProyecto].Application`: Casos de uso e interfaces de repositorios.
+- `[NombreProyecto].Infrastructure`: Implementación de EF Core, migraciones y servicios externos.
 - `[NombreProyecto].API`: Controladores, middlewares y configuración de la API.
 - `[NombreProyecto].Web`: Sitio Web para administrar la aplicación
 
